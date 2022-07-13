@@ -57,9 +57,11 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
     'react/display-name': 'off',
+    'no-plusplus': 'off',
+    'no-param-reassign': 'off'
   },
   env: {
     browser: true,
     node: true,
-  }
+  },
 };
