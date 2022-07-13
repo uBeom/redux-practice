@@ -1,10 +1,11 @@
-import { useCallback } from 'react';
+import { useCallback, memo } from 'react';
 
 import { useAppDispatch } from '@/hooks/useApp';
 import { increase, decrease, increaseAmount } from '@/modules/counter';
 
-export const CounterController = () => {
+export const CounterController = memo(() => {
   const dispatch = useAppDispatch();
+
   const onIncrease = useCallback(() => dispatch(increase()), [dispatch]);
   const onDecrease = useCallback(() => dispatch(decrease()), [dispatch]);
   const onIncreaseAmount = useCallback(
@@ -25,4 +26,4 @@ export const CounterController = () => {
       </button>
     </div>
   );
-};
+});
