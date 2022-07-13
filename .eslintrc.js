@@ -58,7 +58,9 @@ module.exports = {
     'no-plusplus': ['error', { allowForLoopAfterthoughts: true }],
     'react/display-name': 'off',
     'no-plusplus': 'off',
-    'no-param-reassign': 'off'
+    'no-param-reassign': 'off',
+    'prefer-const': 'off',
+    'no-shadow': 'off'
   },
   env: {
     browser: true,
